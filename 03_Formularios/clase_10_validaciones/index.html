@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Validaciones</title>
+	</head>
+	<body>
+		<form action="#" method="post">
+			<div>
+				<label for="email">Email:</label>
+				<input
+					type="email"
+					name="email"
+					id="email"
+					required
+					placeholder="tucorreo@example.com"
+				/>
+			</div>
+			<div>
+				<label for="Telefono">Teléfono:</label>
+				<input
+					type="tel"
+					name="Telefono"
+					id="Telefono"
+					placeholder="+122 251 356"
+					title="Ingresa 9 dígitos"
+					pattern="[0-9]{9}"
+				/>
+			</div>
+			<div>
+				<label for="cantidad">Cantidad:</label>
+				<input
+					type="number"
+					name="cantidad"
+					id="cantidad"
+					min="1"
+					max="100"
+					step="5"
+					value="10"
+				/>
+			</div>
+			<div>
+				<label for="fecha">Fecha:</label>
+				<input
+					type="date"
+					name="fecha"
+					id="fecha"
+					min="2024-01-01"
+					max="2030-12-31"
+				/>
+			</div>
+			<div>
+				<label for="password">Contraseña (mínimo 8 caracteres):</label>
+				<input
+					type="password"
+					name="password"
+					id="password"
+					required
+					minlength="8"
+				/>
+			</div>
+			<button type="submit">Enviar</button>
+		</form>
+	</body>
+</html>
